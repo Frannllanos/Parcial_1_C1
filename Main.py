@@ -86,6 +86,9 @@ while True:
     elif opcion == 10 and bandera_dos == True:
         ordenar_participantes_alfabeticamente(participantes, puntajes)
         mostrar_participantes(participantes, puntajes)
+    
+    elif opcion in [2, 3, 4, 5, 6, 7, 8, 9, 10] and not bandera_dos:
+        print("Error: Primero debe cargar los participantes y sus puntajes (opciones 1 y 2).")
 
     elif opcion == 11:
         print("Saliendo...")
